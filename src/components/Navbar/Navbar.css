@@ -1,0 +1,108 @@
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+
+  width: 90%;
+  max-width: 1200px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  padding: 14px 30px;
+  border-radius: 18px;
+
+  z-index: 1000;
+
+  transition: 0.3s ease;
+}
+
+/* GLASS EFFECT ON SCROLL */
+.navbar-scroll {
+  background: rgba(20, 20, 30, 0.6);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* MODERN LOGO */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+
+  color: white;
+
+  padding: 8px 12px;
+  border-radius: 12px;
+
+  /* FIX: make it stable across themes */
+  background: rgba(30, 30, 40, 0.35);
+
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* SMALL DOT STYLE BRAND ICON */
+.logo-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+  box-shadow: 0 0 10px #00c6ff;
+}
+
+/* LOGO TEXT */
+.logo-text {
+  background: linear-gradient(90deg, #ffffff, #a0c4ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* 🔥 TOGGLE FIXED TOP RIGHT */
+.theme-toggle {
+  position: fixed;
+  top: 22px;
+  right: 22px;
+  z-index: 2000;
+
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+  padding: 10px;
+  border-radius: 12px;
+
+  transition: 0.3s ease;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.05) rotate(5deg);
+  background: rgba(255,255,255,0.15);
+  box-shadow: 0 0 20px rgba(255,255,255,0.15);
+}
+
+.navbar,
+.theme-toggle {
+  transition: transform 0.35s ease, opacity 0.35s ease;
+}
+
+/* SHOW */
+.nav-show {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* HIDE */
+.nav-hide {
+  transform: translateY(-120%);
+  opacity: 0;
+  pointer-events: none;
+}

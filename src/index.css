@@ -1,0 +1,58 @@
+*{
+ margin:0;
+ padding:0;
+ box-sizing:border-box;
+}
+
+body{
+ background:#0f0f0f;
+ color:white;
+ font-family:Inter,sans-serif;
+ overflow-x:hidden;
+}
+
+::-webkit-scrollbar{
+ width:6px;
+}
+
+::-webkit-scrollbar-thumb{
+ background:white;
+ border-radius:20px;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+body.light {
+  background: #f5f5f5;
+  color: #111;
+}
+
+.logo {
+  transition: 0.3s;
+  cursor: default;
+}
+
+.logo:hover {
+  text-shadow:
+    0 0 10px rgba(255,255,255,0.6),
+    0 0 30px rgba(255,255,255,0.4);
+}
+
+:root {
+  --bg: #ffffff;
+  --text: #111111;
+  --card-bg: rgba(0, 0, 0, 0.05);
+  --border: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] {
+  --bg: #0d0f1a;
+  --text: #ffffff;
+  --card-bg: rgba(255, 255, 255, 0.08);
+  --border: rgba(255, 255, 255, 0.12);
+}
+

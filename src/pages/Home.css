@@ -1,0 +1,12 @@
+.grid {
+  width: 100%;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;   /* ✅ vertical */
+  align-items: center;      /* center cards */
+
+  gap: 40px;
+
+  padding: 40px 0 100px 0;
+}
